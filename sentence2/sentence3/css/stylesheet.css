@@ -10,16 +10,16 @@ html{
 
 body{
     height: 100%;
-    background-color: black;
-    color: aliceblue;
+    background-color: #8A0015;
     font-family: "lxgw-wenkai-mono-tc", sans-serif;
     font-weight: 700;
     font-style: normal;
-    margin: 3%;
+    margin: 7%;
     font-size: 40px;
+    color: aliceblue;
 }
 
 a{
     text-decoration: none;
-    color: goldenrod;
+    color:gold;
 }

@@ -15,10 +15,11 @@ body{
     font-weight: 700;
     font-style: normal;
     margin: 5%;
-    font-size: 30px;
+    font-size: 40px;
+    color: antiquewhite;
 }
 
 a{
     text-decoration: none;
-    color:darkgray;
+    color:rgb(150, 150, 150);
 }
