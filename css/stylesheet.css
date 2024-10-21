@@ -34,3 +34,20 @@ a{
 a:hover{
     opacity: 0;
 }
+
+.slide-in-text {
+    opacity: 0; 
+    animation: slideIn 2s ease-out forwards; 
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}

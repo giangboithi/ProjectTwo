@@ -35,3 +35,20 @@ a{
 a:hover{
     opacity: 0;
 }
+
+.slide-in-text {
+    opacity: 0; 
+    animation: slideInFromRight 2s ease-out forwards; 
+}
+
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); /* End at its original position */
+        opacity: 1; /* Fully visible */
+    }
+}
