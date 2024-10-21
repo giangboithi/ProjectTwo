@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-html{
-    height: 100%;
+body { 
+    min-height: 100vh;
 }
 
 body{
@@ -14,8 +14,9 @@ body{
     font-family: "lxgw-wenkai-mono-tc", sans-serif;
     font-weight: 700;
     font-style: normal;
-    margin: 5%;
-    font-size: 40px;
+    margin-left: 6%;
+    margin-top: 6%;
+    font-size: 24px;
     color: antiquewhite;
 }
 
@@ -23,3 +24,39 @@ a{
     text-decoration: none;
     color:rgb(150, 150, 150);
 }
+
+.fall-apart-text {
+    font-size: 50px;
+  cursor: pointer; 
+}
+
+  .fall-apart-text span {
+    display: inline-block;
+  animation: fallApart 2s ease forwards; 
+  animation-delay: calc(var(--i) * 0.8s); 
+  }
+  @keyframes fallApart {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(calc(var(--i) * 10px - 30px), 100px) rotate(180deg); 
+        opacity: 0;
+      }
+    }
+
+
+@keyframes comeInAnimation {
+    0% {
+      transform: translateX(-100%); 
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0); 
+      opacity: 1; 
+    }
+  }
+.come-in-text {
+    animation: comeInAnimation 2s ease-out forwards;
+  }

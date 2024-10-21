@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-html{
-    height: 100%;
+body { 
+    min-height: 100vh;
 }
 
 body{
@@ -14,8 +14,9 @@ body{
     font-family: "lxgw-wenkai-mono-tc", sans-serif;
     font-weight: 700;
     font-style: normal;
-    margin:11%;
-    font-size: 40px;
+    margin-left:12%;
+    margin-top:12%;
+    font-size: 24px;
     color: aliceblue;
 }
 
@@ -23,3 +24,26 @@ a{
     text-decoration: none;
     color:gold;
  }
+
+ .swirly-text {
+    animation: swirl 3s infinite; 
+}
+
+
+@keyframes swirl {
+    0% {
+        transform: rotate(0deg) scale(1); 
+    }
+    25% {
+        transform: rotate(10deg) scale(1.1); 
+    }
+    50% {
+        transform: rotate(-10deg) scale(1.1); 
+    }
+    75% {
+        transform: rotate(10deg) scale(1.1); 
+    }
+    100% {
+        transform: rotate(0deg) scale(1); 
+    }
+}

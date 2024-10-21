@@ -14,28 +14,33 @@ body{
     font-family: "lxgw-wenkai-mono-tc", sans-serif;
     font-weight: 700;
     font-style: normal;
-    margin-left: 22%;
-    margin-top: 22%;
     font-size: 24px;
-    color: aliceblue;
+}
+
+p{
+    margin-left:30%;
+    margin-top: 25%;
+    color:gold;
 }
 
 a{
-    text-decoration: none;
-    color:gold;
- }
+  margin-left: 36%;
+  color:aliceblue;
+}
 
- .disappear-text {
-    animation: disappear 2s ease-in-out forwards; 
+.slide-in-text {
+    opacity: 0; 
+    animation: slideIn 2s ease-out forwards; 
 }
 
 
-@keyframes disappear {
+@keyframes slideIn {
     0% {
-        opacity: 1; 
+        transform: translateX(-100%); 
+        opacity: 0;
     }
     100% {
-        opacity: 0; 
+        transform: translateX(0); 
+        opacity: 1; 
     }
 }
- 

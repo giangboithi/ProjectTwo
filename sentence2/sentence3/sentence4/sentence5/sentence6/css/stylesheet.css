@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-html{
-    height: 100%;
+body { 
+    min-height: 100vh;
 }
 
 body{
@@ -14,8 +14,9 @@ body{
     font-family: "lxgw-wenkai-mono-tc", sans-serif;
     font-weight: 700;
     font-style: normal;
-    margin:13%;
-    font-size: 40px;
+    margin-left: 14%;
+    margin-top: 14%;
+    font-size: 24px;
     color: aliceblue;
 }
 
@@ -23,3 +24,14 @@ a{
     text-decoration: none;
     color:gold;
  }
+
+ a{
+    transition-property: opacity;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+a:hover{
+    opacity: 0;
+}

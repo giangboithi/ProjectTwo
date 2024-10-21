@@ -10,20 +10,27 @@ body {
 
 body{
     height: 100%;
-    background-color: black;
-    color: aliceblue;
+    background-color: #8A0015;
+    color: antiquewhite;
     font-family: "lxgw-wenkai-mono-tc", sans-serif;
     font-weight: 700;
     font-style: normal;
-    margin: 3%;
+    margin-left: 4%;
+    margin-top:4%;
     font-size: 24px;
 }
 
 a{
     text-decoration: none;
-    color:aliceblue;
-    animation-duration: 3s;
-  animation-name: slidein;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+    color:goldenrod;
+}
+a{
+    transition-property: opacity;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+
+a:hover{
+    opacity: 0;
 }
