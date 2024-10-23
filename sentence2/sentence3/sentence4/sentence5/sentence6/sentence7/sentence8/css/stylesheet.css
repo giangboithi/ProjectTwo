@@ -28,7 +28,7 @@ a{
  .glowing-text {
     color: #fff; 
     text-align: center; 
-    animation: glow 2s infinite alternate; 
+    animation: glow 1s infinite alternate; 
 }
 
 @keyframes glow {

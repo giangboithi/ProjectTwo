@@ -26,7 +26,7 @@ a{
  }
 
  .expand-text {
-    animation: expand 5s ease-in-out forwards; 
+    animation: expand 8s ease-in-out forwards; 
 }
 
 @keyframes expand {

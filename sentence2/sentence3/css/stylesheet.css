@@ -32,7 +32,7 @@ a{
 
   .fall-apart-text span {
     display: inline-block;
-  animation: fallApart 2s ease forwards; 
+  animation: fallApart 2s ease forwards, reverse-fall 5s ease-in-out forwards; 
   animation-delay: calc(var(--i) * 0.8s); 
   }
   @keyframes fallApart {
@@ -45,7 +45,20 @@ a{
         opacity: 1;
       }
     }
-
+    @keyframes reverse-fall {
+      0% {
+        transform: translate(0, 100px);
+        opacity: 0;
+      }
+      50% {
+        transform: translate(0, 50px);
+        opacity: 0.5;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
 
 @keyframes comeInAnimation {
     0% {
@@ -62,7 +75,7 @@ a{
   }
 
   .columnOne {
-    animation: slideDown 1s ease forwards; 
+    animation: slideDown 2s ease forwards; 
   }
   
   @keyframes slideDown {

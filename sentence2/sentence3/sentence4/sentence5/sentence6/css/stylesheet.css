@@ -29,7 +29,7 @@ a{
     transition-property: opacity;
     transition-duration: 5s;
     transition-timing-function: ease-out;
-    transition-delay: 0s;
+    transition-delay: 2s;
 }
 
 a:hover{
@@ -38,17 +38,17 @@ a:hover{
 
 .slide-in-text {
     opacity: 0; 
-    animation: slideInFromRight 2s ease-out forwards; 
+    animation: slideInFromRight 8s ease-out forwards; 
 }
 
 
 @keyframes slideInFromRight {
     0% {
-        transform: translateX(100%); /* Start off-screen to the right */
+        transform: translateX(100%); 
         opacity: 0; 
     }
     100% {
-        transform: translateX(0); /* End at its original position */
-        opacity: 1; /* Fully visible */
+        transform: translateX(0); 
+        opacity: 1; 
     }
 }
