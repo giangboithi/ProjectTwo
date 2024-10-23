@@ -45,11 +45,3 @@ a{
     }
 }
 
-.back-to-first {
-    cursor: pointer;
-    color: blue;
-    text-decoration: underline;
-  }
-  .back-to-first:hover {
-    color: red;
-  }
